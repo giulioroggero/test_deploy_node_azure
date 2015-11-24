@@ -9,7 +9,7 @@ var debug = require('debug')('app');
 var t = {book: "The lord of the ring", price: 50};
 
 app.get('/', function (req, res) {
-      res.send('Hello World!');
+      res.send('Document db test');
 });
 
 var p = process.env.PORT || 1337;
