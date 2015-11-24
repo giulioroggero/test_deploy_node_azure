@@ -6,10 +6,6 @@ var app = express();
 var debug = require('debug')('app');
 
 
-var t = {
-    book: "The lord of the ring",
-    price: 50
-};
 
 var DocumentClient = require('documentdb').DocumentClient;
 
@@ -30,17 +26,15 @@ var server = app.listen(p, function() {
 });
 
 
-
-
 var databaseDefinition = {
-    id: "sample database"
+    id: "hellodb"
 };
 var collectionDefinition = {
-    id: "sample collection"
+    id: "hellocollection"
 };
 var documentDefinition = {
-    id: "hello world doc",
-    content: "Hello World!"
+    book: "The lord of the ring",
+    price: 50
 };
 
 
@@ -49,7 +43,7 @@ var documentDefinition = {
 
 
 app.get('/', function(req, res) {
-    res.send('Document db test');
+    res.send('Document db test - 17:50');
 });
 
 
