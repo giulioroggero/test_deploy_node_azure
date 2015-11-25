@@ -43,7 +43,7 @@ var documentDefinition = {
 
 
 app.get('/', function(req, res) {
-    res.send('Document db test - 17:50');
+    res.send('Document db test - 14:50');
 });
 
 
